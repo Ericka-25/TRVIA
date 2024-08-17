@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>ADIVINA LA SERIE</title>
+</head>
+
+<body>
+    <h1>TRIVIA DE PELICULAS</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>¿CUÁL ES EL NOMBRE DE LA PELICULA ANIMADA?</p>
+    
+        <img src="img/ad.jpg" class = "imginicio">
+        <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+    </div>
+
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Pantalla juego -->
+        <div id="quiz-container">
+            <div class="pantalla-juego" id="pantalla-juego">
+
+                <p class="timer">Tiempo restante: <span id="time">30</span> segundos</p>
+
+                <img src="img/series.jpg" alt="" id="imgSerie">
+
+                <div class="opciones">
+                    <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                        <div class="letra" id="l0">A</div>
+                        <div class="nombre" id="n0">OPCIÓN A</div>
+                    </div>
+                    <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                        <div class="letra" id="l1">B</div>
+                        <div class="nombre" id="n1">OPCIÓN B</div>
+                    </div>
+                    <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                        <div class="letra" id="l2">C</div>
+                        <div class="nombre" id="n2">OPCIÓN C</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pantalla final -->
+            <div id="pantalla-final">
+                <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+                <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+                <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+            </div>
+        </div> <!-- Cierre del div "quiz-container" -->
+    </div> <!-- Cierre del div "container" -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+

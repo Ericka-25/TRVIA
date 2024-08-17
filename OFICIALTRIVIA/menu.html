@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Proyecto Trivia</title>
+</head>
+<body>
+    <div class="container">
+        <!-- SECCIÓN MENU DEL JUEGO -->
+        <main class="menu">
+            <h2>Hola <span id="nombre-jugador"></span></h2>
+            <p>Elige una categoría...</p>
+            <div class="categorias">
+                <div class="categoria" id="animada">
+                    <img src="img/anni.png" alt="Animada" class="foto-categoria">
+                    <h3>Animada</h3>
+                </div>
+                <div class="categoria" id="terror">
+                    <img src="img/terror.png" alt="Terror" class="foto-categoria">
+                    <h3>Terror</h3>
+                </div>
+                <div class="categoria" id="series">
+                    <img src="img/peliculas.png" alt="Series" class="foto-categoria">
+                    <h3>Series</h3>
+                </div>
+                <button class="btn" onclick="volverAlBienvenida()">VOLVER A REGISTRARSE</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

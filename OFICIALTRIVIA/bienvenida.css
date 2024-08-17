@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed';
+}
+
+body {
+    height: 100vh;
+    background: url(img/p4.jpeg) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    height: 60%;
+    padding: 20px;
+    position: relative;
+}
+
+h2 {
+    font-size: 4em; /* Cambia el tamaño del texto según tu preferencia */
+}
+
+.container .img {
+    width: 28px;
+    position: absolute;
+    top: -120px;
+    right: -90px;
+    z-index: -1;
+}
+
+header {
+    background-color: #262d53;
+    color: #fbfbfb;
+    text-align: center;
+    font-size: 24px;
+    padding: 80px 60px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px #2a2929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio {
+    text-align: center;
+    padding-top: 80px;
+    color: #fbfafa;
+    font-size: 20px;
+}
+
+.inicio input {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 50px;
+    border: 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: #7c59c1;
+    color: #f9f7f7;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #2a2929;
+}
+
+.jugador .nombre {
+    background-color: #3f40ae;
+    width: 90px;
+    padding: 5px;
+    border-radius: 30px 0px 0px 30px;
+    margin-right: -5px;
+    font-size: 16px;
+}
